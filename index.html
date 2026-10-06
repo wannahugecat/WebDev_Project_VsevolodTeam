@@ -12,12 +12,18 @@
             align-items: center;
             padding: 10px 0;
             border-bottom: 2px solid grey; /* line under header */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
         }
 
         /* container with buttons */
         .topButtons {
+            align-items: center;
             display: flex;
             gap: 20px; /* space between buttons */
+        }
+        .topButtons img {
+            margin-right:20px
         }
 
         .topButtons h2 {
@@ -29,10 +35,54 @@
             align-items: center;
             margin-left: auto;
         }
-        a {
+        .Rights {
             position: fixed;
             bottom: 10px;
             left: 10px;
+        }
+        .mainPageBanner {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display:grid;
+            margin-left:72px;
+            gap:24px;
+            
+        }
+        .mainPageBanner h1 {
+            font-size:500;
+        }
+        .mainPageBanner a {
+            font-size: larger;
+        }
+        .bannerButtons {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .mainPageBanner button {
+            border-radius: 4px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .mainPageBanner .secondaryBtn {
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+        .PorscheImage img {
+            width: auto;
+            display: flex;
+            margin-left:900px;
+            margin-top: -200px;
+            
         }
     </style>
 </head>
@@ -50,7 +100,21 @@
         </div>
     </header>
 
+    <div class='Rights'>
     <a>© 2026 John O’Reilly. All cars subject to enthusiastic inspection.</a>
+    </div>
+    <div class='mainPageBanner'>
+        <h2>A PERSONAL COLLECTION, PLAINLY PRESENTED</h2>
+        <h1>Find a car you'll want to keep.</h1>
+        <a>Browse John's hand picked cars from useful modern classics<br>to the ones that make absolutely no practical sense.</a>
+        <div class="bannerButtons">
+            <button>View recommended cars</button>
+            <button class="secondaryBtn">See the collection</button>
+        </div>
+    </div>
+    <div class="PorscheImage">
+        <img src="Porsche.png">
+    </div>
 
 </body>
 </html>
