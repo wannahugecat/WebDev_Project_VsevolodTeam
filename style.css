@@ -1,0 +1,140 @@
+/* CSS Styles fyle*/
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid grey; /* line under header */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        /* container with buttons */
+        .topButtons {
+            margin-right: 20px;
+            align-items: center;
+            display: flex;
+            gap: 20px; /* space between buttons */
+        }
+        .topButtons img {
+            margin-right:20px
+        }
+
+        .topButtons h2 {
+            margin: 0;
+            cursor: pointer;
+        }
+        .disabilitiesButton {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        .Rights {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+        .mainPageBanner {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display:grid;
+            margin-left:72px;
+            gap:24px;
+            
+        }
+        .mainPageBanner h1 {
+            font-size:500;
+        }
+        .mainPageBanner a {
+            font-size: larger;
+        }
+        .bannerButtons {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .mainPageBanner button {
+            border-radius: 4px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .mainPageBanner .secondaryBtn {
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+        .PorscheImage img {
+            width: auto;
+            display: flex;
+            margin-left:900px;
+            margin-top: -200px;
+            
+        }
+        
+        .search {
+            margin-top:50px;
+            background-color: rgb(227, 227, 227);
+            padding: 20px 72px;
+        }
+
+        .searchContent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .searchTitle h1 {
+            margin: 0 0 10px 0;
+        }
+
+        .searchTitle h2 {
+            margin: 0;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .filterButtons {
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+        }
+
+        .filterGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .filterGroup a {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .filterButtons button {
+            width: 250px;
+            height: 40px;
+            padding: 0 15px;
+            border-radius: 0px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .filterButtons .showCars {
+            max-width: 100px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            height: 40px;
+        }
