@@ -1,216 +1,308 @@
-/* CSS Styles file */
-
 body {
-    padding-bottom: 60px; /* keeps content clear of the fixed footer text */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h4 {
+    font-size: 12px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+button {
+    height: 48px;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.blackBtn {
+    background-color: black;
+    color: white;
+}
+
+.whiteBtn {
+    background-color: white;
+    color: black;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 2px solid grey; /* line under header */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 72px;
+    border-bottom: 1px solid #ddd;
 }
 
-/* container with buttons */
+.header h1 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
 .topButtons {
-    margin-right: 20px;
-    align-items: center;
     display: flex;
-    gap: 20px; /* space between buttons */
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
 }
 
 .topButtons img {
-    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
-.topButtons h2 {
-    margin: 0;
-    cursor: pointer;
-}
-
-.disabilitiesButton {
+.hero {
     display: flex;
     align-items: center;
-    margin-left: auto;
-}
-
-.Rights {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
+    justify-content: space-between;
+    padding: 64px 72px;
 }
 
 .mainPageBanner {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    margin-left: 72px;
-    gap: 24px;
+    width: 45%;
 }
 
-.mainPageBanner a {
-    font-size: larger;
+.mainPageBanner h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 25px 0;
+}
+
+.mainPageBanner p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin-bottom: 25px;
 }
 
 .bannerButtons {
     display: flex;
-    gap: 10px;
-    align-items: stretch;
-}
-
-.mainPageBanner button {
-    border-radius: 4px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    cursor: pointer;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mainPageBanner .secondaryBtn {
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    border: 2px solid black;
+    gap: 12px;
 }
 
 .PorscheImage img {
-    width: auto;
-    display: flex;
-    margin-left: 900px;
-    margin-top: -200px;
+    width: 610px;
+    height: 360px;
+    object-fit: cover;
 }
-
-/* ---------- Search section ---------- */
 
 .search {
-    margin-top: 50px;
-    background-color: rgb(227, 227, 227);
-    padding: 20px 72px;
-}
-
-.searchContent {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 40px;
-}
-
-.searchTitle h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0 0 10px 0;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 24px 72px;
 }
 
 .searchTitle h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    margin: 0;
-    font-weight: normal;
-    color: #555;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.searchTitle p {
+    font-size: 14px;
+    color: #666;
 }
 
 .filterButtons {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     align-items: flex-end;
-    gap: 15px;
+    gap: 24px;
 }
 
 .filterGroup {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
 }
 
-.filterGroup a {
+.filterGroup label {
+    font-size: 11px;
+    color: #666;
+}
+
+.filterGroup select {
+    width: 240px;
+    height: 48px;
+    padding: 0 10px;
     font-size: 14px;
-    font-weight: bold;
-}
-
-.filterButtons button {
-    font-family: inherit;
-    width: 250px;
-    height: 40px;
-    padding: 0 15px;
-    border-radius: 0;
     background-color: white;
-    color: black;
-    border: 2px solid black;
-    cursor: pointer;
+    border: 1px solid black;
 }
-
-.filterButtons .showCars {
-    max-width: 100px;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    height: 40px;
-}
-
-/* ---------- Recommended cars ---------- */
 
 .recommendedCars {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px 72px;
+    padding: 80px 72px 40px 72px;
 }
 
-/* the row that holds the three cards */
-.recommendedCars .carsBanners {
+.recommendedCars h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.recommendedCars p {
+    color: #666;
+}
+
+.carsBanners {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;      /* cards drop to a new line on small screens */
     gap: 24px;
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
-/* each card */
-.recommendedCars .carCard {
+.carCard {
     flex: 1;
-    min-width: 280px;
-    border: 2px solid grey;
-    box-sizing: border-box;
-    padding: 16px;
+    border: 1px solid #ddd;
 }
 
-.recommendedCars .carCard img {
-    display: block;
+.carCard img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
-/* car name on the left, price on the right */
-.recommendedCars .cardTitle {
+.cardInfo {
+    padding: 24px;
+}
+
+.cardTitle {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    gap: 12px;
 }
 
-.recommendedCars .cardTitle h1 {
+.cardTitle h3 {
+    font-size: 22px;
+}
+
+.cardDetails {
+    display: flex;
+    gap: 24px;
+    margin-top: 15px;
+}
+
+.cardDetails small {
+    font-size: 11px;
+    color: #777;
+}
+
+.cardDetails p {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #111;
+}
+
+.fromTheCollection {
+    padding: 40px 72px 80px 72px;
+}
+
+.collectionTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fromTheCollection h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.fromTheCollection p {
+    color: #666;
+}
+
+.smallCard {
+    flex: 1;
+}
+
+.smallCard img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.smallCard h4 {
+    font-size: 14px;
+    color: #111;
+    letter-spacing: 0;
+    margin-top: 12px;
+}
+
+.Opinion {
+    display: flex;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    padding: 64px 72px;
+}
+
+.leftSide {
+    width: 400px;
+}
+
+.leftSide h2 {
+    font-size: 32px;
+    margin-top: 12px;
+    width: 300px;
+}
+
+.quote {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+.author {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 72px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTop h3 {
     font-size: 20px;
-    margin: 12px 0;
+    font-weight: normal;
 }
 
-/* year on the left, mileage on the right */
-.recommendedCars .cardDetails {
+.footerLinks {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.footerLinks a {
+    color: white;
+}
+
+.footerBottom {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
-}
-
-.recommendedCars .cardDetails a {
+    margin-top: 40px;
     font-size: 12px;
-    font-weight: bold;
-    color: #555;
-}
-
-.recommendedCars .cardDetails h2 {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 4px 0 0 0;
+    color: #bbb;
 }
