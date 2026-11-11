@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,12 +14,13 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-h4 {
+.eyebrow {
     font-size: 12px;
     color: #555;
     letter-spacing: 1px;
 }
 
+/* Buttons */
 button {
     height: 48px;
     padding: 0 20px;
@@ -38,6 +40,7 @@ button {
     color: black;
 }
 
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +49,7 @@ button {
     border-bottom: 1px solid #ddd;
 }
 
-.header h1 {
+.header .siteName {
     font-size: 28px;
     font-weight: normal;
 }
@@ -65,6 +68,7 @@ button {
     border-radius: 4px;
 }
 
+/* Main banner */
 .hero {
     display: flex;
     align-items: center;
@@ -100,6 +104,7 @@ button {
     object-fit: cover;
 }
 
+/* Search bar */
 .search {
     display: flex;
     justify-content: space-between;
@@ -146,6 +151,7 @@ button {
     border: 1px solid black;
 }
 
+/* Recommended cars */
 .recommendedCars {
     padding: 80px 72px 40px 72px;
 }
@@ -207,6 +213,7 @@ button {
     color: #111;
 }
 
+/* Collection */
 .fromTheCollection {
     padding: 40px 72px 80px 72px;
 }
@@ -237,13 +244,14 @@ button {
     display: block;
 }
 
-.smallCard h4 {
+.smallCard h3 {
     font-size: 14px;
     color: #111;
     letter-spacing: 0;
     margin-top: 12px;
 }
 
+/* Opinion */
 .Opinion {
     display: flex;
     background-color: #f2f2f2;
@@ -272,6 +280,7 @@ button {
     color: #666;
 }
 
+/* Footer */
 .footer {
     background-color: #111;
     color: white;
@@ -305,4 +314,63 @@ button {
     margin-top: 40px;
     font-size: 12px;
     color: #bbb;
+}
+
+/* Accessibility */
+
+/* Bigger text, left aligned */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.eyebrow,
+button,
+.topButtons,
+.footerLinks,
+.footerBottom,
+.smallCard h3,
+.filterGroup label,
+.filterGroup select,
+.searchTitle p,
+.cardDetails small,
+.cardDetails p,
+.author {
+    font-size: 16px;
+}
+
+/* Darker grey for contrast */
+.cardDetails small {
+    color: #555;
+}
+
+/* Underline links on hover */
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Focus outline */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #0057d9;
+    outline-offset: 2px;
+}
+
+/* Skip link */
+.skipLink {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+.skipLink:focus {
+    left: 8px;
 }

@@ -1,0 +1,338 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(17, 17, 17);
+}
+
+a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.eyebrow {
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+button {
+    height: 48px;
+    padding: 0 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.blackBtn {
+    background-color: black;
+    color: white;
+}
+
+.whiteBtn {
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 72px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.header .siteName {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.topButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.topButtons img {
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 40px 72px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTop h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.footerLinks a {
+    color: white;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 12px;
+    color: rgb(187, 187, 187);
+}
+
+/* Intro */
+.aboutIntro {
+    padding: 64px 72px 40px 72px;
+}
+
+.aboutIntro h1 {
+    font-size: 56px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.bigText {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 20px;
+}
+
+.smallText {
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+}
+
+/* Big image */
+.aboutImage {
+    padding: 0 72px 60px 72px;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.aboutImage p {
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+    margin-top: 14px;
+}
+
+/* Philosophy */
+.philosophy {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 64px 72px;
+}
+
+.philosophyLeft {
+    width: 400px;
+}
+
+.philosophyLeft .eyebrow {
+    color: rgb(200, 200, 200);
+}
+
+.philosophyLeft h2 {
+    font-size: 32px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+.philosophyRight .quote {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+.philosophyRight .author {
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+/* What belongs */
+.belongs {
+    display: flex;
+    gap: 32px;
+    padding: 80px 72px 40px 72px;
+}
+
+.belongsText {
+    width: 400px;
+    margin-right: 24px;
+}
+
+.belongsText h2 {
+    font-size: 32px;
+    margin: 10px 0 20px 0;
+}
+
+.belongsText p {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 24px;
+}
+
+.belongsCar {
+    flex: 1;
+}
+
+.belongsCar img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.belongsCar h3 {
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0;
+    margin-top: 12px;
+}
+
+/* How cars are chosen */
+.choosing {
+    padding: 40px 72px 80px 72px;
+}
+
+.choosing h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.choosingSub {
+    color: rgb(102, 102, 102);
+}
+
+.choices {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.choice {
+    flex: 1;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding-top: 24px;
+}
+
+.choice h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.choice p {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+}
+
+/* Closing */
+.closing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 64px 72px;
+}
+
+.closingText {
+    width: 55%;
+}
+
+.closingText h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.closingText p {
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+}
+
+.closingButtons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Accessibility */
+
+/* Bigger text, left aligned */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.eyebrow,
+button,
+.topButtons,
+.footerLinks,
+.footerBottom,
+.smallText,
+.aboutImage p,
+.belongsCar h3,
+.philosophyRight .author {
+    font-size: 16px;
+}
+
+/* Underline links on hover */
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Focus outline */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #0057d9;
+    outline-offset: 2px;
+}
+
+/* Skip link */
+.skipLink {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+.skipLink:focus {
+    left: 8px;
+}
