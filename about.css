@@ -1,4 +1,5 @@
-/* General styles */
+/*General styles*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +21,8 @@ h1, h2, h3, h4, p {
     letter-spacing: 1px;
 }
 
-/* Buttons */
+/*Buttons*/
+
 button {
     height: 48px;
     padding: 0 20px;
@@ -40,7 +42,8 @@ button {
     color: black;
 }
 
-/* Header */
+/*Header*/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -68,7 +71,8 @@ button {
     border-radius: 4px;
 }
 
-/* Footer */
+/*Footer*/
+
 .footer {
     background-color: rgb(17, 17, 17);
     color: white;
@@ -104,7 +108,8 @@ button {
     color: rgb(187, 187, 187);
 }
 
-/* Intro */
+/*Intro*/
+
 .aboutIntro {
     padding: 64px 72px 40px 72px;
 }
@@ -127,7 +132,8 @@ button {
     color: rgb(102, 102, 102);
 }
 
-/* Big image */
+/*Big image*/
+
 .aboutImage {
     padding: 0 72px 60px 72px;
 }
@@ -145,7 +151,8 @@ button {
     margin-top: 14px;
 }
 
-/* Philosophy */
+/*Philosophy*/
+
 .philosophy {
     display: flex;
     background-color: black;
@@ -178,7 +185,8 @@ button {
     color: rgb(200, 200, 200);
 }
 
-/* What belongs */
+/*What belongs*/
+
 .belongs {
     display: flex;
     gap: 32px;
@@ -220,7 +228,8 @@ button {
     margin-top: 12px;
 }
 
-/* How cars are chosen */
+/*How cars are chosen*/
+
 .choosing {
     padding: 40px 72px 80px 72px;
 }
@@ -257,7 +266,8 @@ button {
     color: rgb(102, 102, 102);
 }
 
-/* Closing */
+/*Closing*/
+
 .closing {
     display: flex;
     justify-content: space-between;
@@ -286,9 +296,10 @@ button {
     gap: 12px;
 }
 
-/* Accessibility */
+/*Accessibility*/
 
-/* Bigger text, left aligned */
+/*Bigger text*/
+
 body {
     font-size: 16px;
     line-height: 1.6;
@@ -307,13 +318,15 @@ button,
     font-size: 16px;
 }
 
-/* Underline links on hover */
+/*Underline links on hover*/
+
 a:hover,
 a:focus {
     text-decoration: underline;
 }
 
-/* Focus outline */
+/*Focus outline*/
+
 a:focus-visible,
 button:focus-visible,
 select:focus-visible {
@@ -321,7 +334,8 @@ select:focus-visible {
     outline-offset: 2px;
 }
 
-/* Skip link */
+/*Skip link*/
+
 .skipLink {
     position: absolute;
     left: -9999px;
@@ -335,4 +349,153 @@ select:focus-visible {
 
 .skipLink:focus {
     left: 8px;
+}
+
+/*Responsive design*/
+
+/*TABLET*/
+@media (max-width: 1024px) {
+
+    .header,
+    .aboutIntro,
+    .aboutImage,
+    .philosophy,
+    .belongs,
+    .choosing,
+    .closing,
+    .footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .aboutIntro h1 {
+        font-size: 44px;
+    }
+
+    .aboutImage img {
+        height: 320px;
+    }
+
+    .philosophyLeft {
+        width: 300px;
+    }
+
+    /* What belongs*/
+    .belongs {
+        flex-wrap: wrap;
+    }
+
+    .belongsText {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .belongsCar {
+        flex: 1 1 calc(50% - 16px);
+    }
+
+    .closing {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .closingText {
+        width: 100%;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 599px) {
+
+    .header,
+    .aboutIntro,
+    .aboutImage,
+    .philosophy,
+    .belongs,
+    .choosing,
+    .closing,
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header .siteName {
+        font-size: 24px;
+    }
+
+    .topButtons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .aboutIntro {
+        padding-top: 32px;
+    }
+
+    .aboutIntro h1 {
+        font-size: 34px;
+    }
+
+    .aboutImage img {
+        height: 220px;
+    }
+
+    .philosophy {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .philosophyLeft {
+        width: 100%;
+    }
+
+    .philosophyLeft h2 {
+        width: auto;
+        font-size: 26px;
+    }
+
+    .philosophyRight .quote {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*What belongs*/
+    .belongs {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .belongsCar {
+        flex: none;
+        width: 100%;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .closingButtons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*Footer*/
+    .footerTop,
+    .footerBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .footerLinks {
+        flex-wrap: wrap;
+    }
 }

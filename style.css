@@ -1,4 +1,5 @@
-/* General styles */
+/*General styles*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,7 +21,8 @@ h1, h2, h3, h4, p {
     letter-spacing: 1px;
 }
 
-/* Buttons */
+/*Buttons*/
+
 button {
     height: 48px;
     padding: 0 20px;
@@ -33,14 +35,27 @@ button {
 .blackBtn {
     background-color: black;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blackBtn:hover {
+    background-color: white;
+    color: black;
 }
 
 .whiteBtn {
     background-color: white;
     color: black;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header */
+.whiteBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Header*/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -68,7 +83,8 @@ button {
     border-radius: 4px;
 }
 
-/* Main banner */
+/*Main banner*/
+
 .hero {
     display: flex;
     align-items: center;
@@ -104,7 +120,8 @@ button {
     object-fit: cover;
 }
 
-/* Search bar */
+/*Search bar*/
+
 .search {
     display: flex;
     justify-content: space-between;
@@ -151,7 +168,8 @@ button {
     border: 1px solid black;
 }
 
-/* Recommended cars */
+/*Recommended cars*/
+
 .recommendedCars {
     padding: 80px 72px 40px 72px;
 }
@@ -213,7 +231,8 @@ button {
     color: #111;
 }
 
-/* Collection */
+/*Collection*/
+
 .fromTheCollection {
     padding: 40px 72px 80px 72px;
 }
@@ -251,7 +270,8 @@ button {
     margin-top: 12px;
 }
 
-/* Opinion */
+/*Opinion*/
+
 .Opinion {
     display: flex;
     background-color: #f2f2f2;
@@ -280,7 +300,8 @@ button {
     color: #666;
 }
 
-/* Footer */
+/*Footer*/
+
 .footer {
     background-color: #111;
     color: white;
@@ -316,9 +337,10 @@ button {
     color: #bbb;
 }
 
-/* Accessibility */
+/*Accessibility*/
 
-/* Bigger text, left aligned */
+/*Bigger text*/
+
 body {
     font-size: 16px;
     line-height: 1.6;
@@ -340,26 +362,27 @@ button,
     font-size: 16px;
 }
 
-/* Darker grey for contrast */
+/*Darker grey for contrast*/
+
 .cardDetails small {
     color: #555;
 }
 
-/* Underline links on hover */
-a:hover,
-a:focus {
+/*Underline links on hover*/
+
+a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Focus outline */
-a:focus-visible,
-button:focus-visible,
-select:focus-visible {
+/*Focus outline*/
+
+a:focus-visible, button:focus-visible, select:focus-visible {
     outline: 3px solid #0057d9;
     outline-offset: 2px;
 }
 
-/* Skip link */
+/*Skip link*/
+
 .skipLink {
     position: absolute;
     left: -9999px;
@@ -373,4 +396,167 @@ select:focus-visible {
 
 .skipLink:focus {
     left: 8px;
+}
+
+/*Responsive design*/
+
+@media (max-width: 1024px) {
+
+    .header, .hero, .search, .recommendedCars, .fromTheCollection, .Opinion, .footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+  
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .mainPageBanner {
+        width: 100%;
+    }
+
+    .mainPageBanner h1 {
+        font-size: 48px;
+    }
+
+    .PorscheImage {
+        width: 100%;
+    }
+
+    .PorscheImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filterButtons {
+        flex-wrap: wrap;
+    }
+
+    .filterGroup select {
+        width: 200px;
+    }
+
+    .carsBanners {
+        flex-wrap: wrap;
+    }
+
+    .carCard, .smallCard {
+        flex: 1 1 calc(50% - 12px);
+    }
+
+    /* Opinion */
+    .leftSide {
+        width: 300px;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 599px) {
+
+    .header, .hero, .search, .recommendedCars, .fromTheCollection, .Opinion, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header .siteName {
+        font-size: 24px;
+    }
+
+    .topButtons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .mainPageBanner h1 {
+        font-size: 36px;
+    }
+
+    .bannerButtons {
+        flex-direction: column;
+    }
+
+    .filterButtons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .filterGroup select {
+        width: 100%;
+    }
+
+    .carsBanners {
+        flex-direction: column;
+    }
+
+    .carCard, .smallCard {
+        flex: none;
+        width: 100%;
+    }
+
+    .recommendedCars, .fromTheCollection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .recommendedCars h2, .fromTheCollection h2, .leftSide h2 {
+        font-size: 26px;
+    }
+
+    .collectionTop {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /*Opinion*/
+
+    .Opinion {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .leftSide {
+        width: 100%;
+    }
+
+    .leftSide h2 {
+        width: auto;
+    }
+
+    .quote {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*Footer*/
+    .footerTop, .footerBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .footerLinks {
+        flex-wrap: wrap;
+    }
 }
